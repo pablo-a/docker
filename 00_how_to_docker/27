@@ -1,1 +1,1 @@
-docker service logs -f engineering-bay
+docker logs -f $(docker ps | grep "engineering-bay" | cut -d " " -f 1)
