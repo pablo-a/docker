@@ -1,0 +1,1 @@
+eval $(docker-machine ssh Char docker swarm join-token worker | grep "docker")
